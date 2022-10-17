@@ -1,8 +1,5 @@
 
+///Public module that re exports Data structure implementaios
 
-pub fn mm() {
-    
-}
-
-
+//re exporting Stack data structure
 pub use crate::stack::Stack;
