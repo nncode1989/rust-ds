@@ -1,5 +1,5 @@
-// use dslib::api;
+use dslib::api::{self, Stack};
 
 fn main() {
-    // api::Stack{};
+    let my_stack:Stack<i16>= api::Stack::new();
 }

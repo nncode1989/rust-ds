@@ -23,6 +23,29 @@ mod tests {
         assert_eq!(stack_mut.pop(), None);
         assert_eq!(stack_mut.push(101), Some(1));
     }
+    #[test]
+    fn test_stack_float() {
+        let mut stack: Stack<f32> = Stack::new();
+        let stack_mut = &mut stack;
+
+        assert_eq!(stack_mut.pop(), None);
+
+        stack_mut.push(10.2);
+
+        assert_eq!(stack_mut.pop(), Some(10.2));
+    }
+
+    #[test]
+    fn test_stack_string() {
+        let mut stack: Stack<String> = Stack::new();
+        let stack_mut = &mut stack;
+
+        assert_eq!(stack_mut.pop(), None);
+
+        let s = String::from("Test");
+        stack_mut.push(s);
+        assert_eq!(stack_mut.pop(), Some(String::from("Test")));
+    }
 }
 ///A Generic Struct that represents a Stack DataStructure
 /// The DS , owns athe elements that are pushed to the stack.
