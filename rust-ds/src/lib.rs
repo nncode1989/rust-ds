@@ -7,7 +7,8 @@ mod tests {
     }
 }
 
+pub fn welcome_message() -> &'static str{
+    "Hello Welcone to Rust DataStructure lessons"
+}
 
-mod stack;
-pub mod api;
-
+pub mod stack;
