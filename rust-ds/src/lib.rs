@@ -12,3 +12,4 @@ pub fn welcome_message() -> &'static str{
 }
 
 pub mod stack;
+pub mod cqueue;
