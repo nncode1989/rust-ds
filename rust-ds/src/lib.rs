@@ -6,5 +6,7 @@ mod tests {
     }
 }
 
+pub use self::stack::Stack;
+
 /// Adds one to the number given.
 pub mod stack;

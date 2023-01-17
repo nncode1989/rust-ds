@@ -26,17 +26,28 @@ mod tests {
 /// Stack Trait.
 pub trait StackTrait {
     type Item;
-
+    /// Push item:Item to the top of stack
     fn push(&mut self, i: Self::Item);
+    /// Remove and Return item:Item from the top of stack
     fn pop(&mut self) -> Option<Self::Item>;
+    /// Return Option<&item:Item> from the top of stack
     fn top(&mut self) -> Option<&Self::Item>;
+    /// Return True if stack is empty
     fn is_empty(&self) -> bool;
+    /// Return the number of items currently in the stack.
     fn size(&self) -> usize;
 }
 
 /// Vector based implementation of StackTrait
 pub struct Stack<T> {
     items: Vec<T>,
+}
+
+impl<T> Stack<T> {
+    pub fn new() -> Self{
+        let stack_items : Vec<T> = vec![];
+        Self { items: stack_items }
+    }    
 }
 
 impl<T> StackTrait for Stack<T> {
