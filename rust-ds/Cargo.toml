@@ -9,7 +9,7 @@ name = "dslib"
 path = "src/lib.rs"
 
 [[bin]]
-name = "your_program_name"
+name = "stack"
 path = "src/bin/main.rs"
 
 [[bin]]
