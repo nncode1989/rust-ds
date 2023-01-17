@@ -7,6 +7,7 @@ mod tests {
 }
 
 pub use self::stack::Stack;
-
+pub use self::queue::simple::Simple;
 /// Adds one to the number given.
 pub mod stack;
+pub mod queue;

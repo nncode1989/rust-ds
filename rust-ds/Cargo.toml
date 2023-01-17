@@ -10,10 +10,14 @@ path = "src/lib.rs"
 
 [[bin]]
 name = "stack"
-path = "src/bin/main.rs"
+path = "src/bin/stack.rs"
 
 [[bin]]
 name = "client"
 path = "src/bin/main.rs"
+
+[[bin]]
+name = "queue"
+path = "src/bin/queue.rs"
 
 [dependencies]
