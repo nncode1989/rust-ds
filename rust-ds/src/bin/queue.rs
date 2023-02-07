@@ -1,4 +1,4 @@
-use dslib::{self, queue::QueueTrait, stack::StackTrait};
+use dslib::{self, queue::QueueTrait};
 
 fn main() {
     let mut sq: dslib::Simple<i16> = dslib::Simple::<i16>::new();
